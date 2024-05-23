@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57819800-cb8a-420d-ac8c-47341a277f5a" name="Changes" comment="" />
+    <list default="true" id="57819800-cb8a-420d-ac8c-47341a277f5a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/suzieBarbieStore/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/suzieBarbieStore/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/suzieBarbieStore/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/suzieBarbieStore/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/suzieBarbieStore/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/suzieBarbieStore/repository/UserRepositoryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2grolaWh89lHnyD46oy8ZGcbH7j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -40,7 +48,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/user/Desktop/extractPostgres/jar_files (5)/postgresql-42.7.3.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -98,6 +106,7 @@
       <updated>1716465213848</updated>
       <workItem from="1716465217551" duration="1299000" />
       <workItem from="1716472669747" duration="2847000" />
+      <workItem from="1716478172424" duration="1768000" />
     </task>
     <servers />
   </component>

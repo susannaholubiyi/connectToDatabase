@@ -15,5 +15,9 @@ class UserRepositoryTest {
         System.out.println("connection -> "+ connection);
 
     }
+    @Test
+    public void saveUserTest(){
+
+    }
 
 }
