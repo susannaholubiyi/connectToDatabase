@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57819800-cb8a-420d-ac8c-47341a277f5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/suzieBarbieStore/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/suzieBarbieStore/models/Wallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/suzieBarbieStore/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/suzieBarbieStore/repository/WalletRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/suzieBarbieStore.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/org/suzieBarbieStore/repository/UserRepositoryTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="57819800-cb8a-420d-ac8c-47341a277f5a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +46,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -108,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716465213848</updated>
       <workItem from="1716465217551" duration="1299000" />
-      <workItem from="1716472669747" duration="2138000" />
+      <workItem from="1716472669747" duration="2847000" />
     </task>
     <servers />
   </component>
