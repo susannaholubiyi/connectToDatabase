@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="57819800-cb8a-420d-ac8c-47341a277f5a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/suzieBarbieStore/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/suzieBarbieStore/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/suzieBarbieStore/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/suzieBarbieStore/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/org/suzieBarbieStore/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/suzieBarbieStore/repository/UserRepositoryTest.java" afterDir="false" />
     </list>
@@ -73,7 +72,23 @@
       <recent name="org.suzieBarbieStore.repository" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest.saveUserTest">
+    <configuration name="UserRepositoryTest.saveUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="suzieBarbieStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.suzieBarbieStore.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.suzieBarbieStore.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.suzieBarbieStore.repository.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="saveUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRepositoryTest.testDatabaseConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="suzieBarbieStore" />
       <extension name="coverage">
@@ -92,6 +107,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRepositoryTest.saveUserTest" />
         <item itemvalue="JUnit.UserRepositoryTest.testDatabaseConnection" />
       </list>
     </recent_temporary>
@@ -106,7 +122,7 @@
       <updated>1716465213848</updated>
       <workItem from="1716465217551" duration="1299000" />
       <workItem from="1716472669747" duration="2847000" />
-      <workItem from="1716478172424" duration="1768000" />
+      <workItem from="1716478172424" duration="4071000" />
     </task>
     <servers />
   </component>
