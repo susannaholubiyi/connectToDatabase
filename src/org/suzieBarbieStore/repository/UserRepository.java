@@ -3,6 +3,8 @@ package org.suzieBarbieStore.repository;
 import org.suzieBarbieStore.models.User;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 @SuppressWarnings(value = {"all"} )
 public class UserRepository {
@@ -92,5 +94,27 @@ public class UserRepository {
         } catch (SQLException e) {
             throw new RuntimeException("Failed to delete");
         }
+    }
+    public List<User> findAll(){
+        try (Connection connection = connect()){
+            String sql = "SELECT * FROM users";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            return extractedUsersFrom(resultSet);
+        } catch (SQLException e) {
+            return null;
+        }
+    }
+    private List<User> extractedUsersFrom(ResultSet resultSet) throws SQLException {
+        List<User> users = new ArrayList<>();
+        while (resultSet.next()){
+            Long id = resultSet.getLong("id");
+            Long walletId = resultSet.getLong("wallet_id");
+            User user = new User();
+            user.setId(id);
+            user.setWalletId(walletId);
+            users.add(user);
+        }
+        return users;
     }
 }

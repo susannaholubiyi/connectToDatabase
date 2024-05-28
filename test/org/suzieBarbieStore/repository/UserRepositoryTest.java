@@ -5,6 +5,7 @@ import org.suzieBarbieStore.models.User;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -50,6 +51,11 @@ class UserRepositoryTest {
         userRepository.deleteUser(userId);
         Optional<User> deletedUser = userRepository.findById(3L);
         assertTrue(deletedUser.isEmpty());
+    }
+    @Test
+    public void testFindAllUsers(){
+        List<User> users = userRepository.findAll();
+        assertEquals(2, users.size());
     }
 
 }
