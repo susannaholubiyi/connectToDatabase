@@ -25,4 +25,13 @@ class UserRepositoryTest {
         assertNotNull(savedUser);
     }
 
+    @Test
+    public void testUpdateUser(){
+        Long userId = 2L;
+        Long walletId = 200L;
+        User user = userRepository.updateUser(userId, walletId);
+        assertNotNull(user);
+        assertEquals(200L, user.getWalletId());
+    }
+
 }

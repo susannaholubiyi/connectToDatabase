@@ -27,8 +27,7 @@ public class UserRepository {
             Long currentId = resultSet.getLong(1);
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setLong(1, currentId+1);
-            if (user.getWalletId()!= null)
-                preparedStatement.setLong(2, user.getWalletId());
+            preparedStatement.setObject(2, user.getWalletId());
             preparedStatement.execute();
 
             return getUserBy(currentId+1);
@@ -58,6 +57,20 @@ public class UserRepository {
             System.out.println(e.getMessage());
             throw new RuntimeException("Failed to connect to database");
         }
+    }
+
+    public User updateUser (Long userId, Long walletId){
+        try(Connection connection = connect()){
+            String sql = "UPDATE users SET wallet_id = ? WHERE id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setLong(1, walletId);
+            preparedStatement.setLong(2, userId);
+            preparedStatement.executeUpdate();
+            return  getUserBy(userId);
+        } catch (SQLException e) {
+            throw new RuntimeException(e.getMessage());
+        }
+
     }
 
 
