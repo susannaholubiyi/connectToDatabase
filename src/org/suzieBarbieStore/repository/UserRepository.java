@@ -3,7 +3,8 @@ package org.suzieBarbieStore.repository;
 import org.suzieBarbieStore.models.User;
 
 import java.sql.*;
-
+import java.util.Optional;
+@SuppressWarnings(value = {"all"} )
 public class UserRepository {
     public static Connection connect(){
         String url = "jdbc:postgresql://localhost:5432/suzies_store";
@@ -18,26 +19,33 @@ public class UserRepository {
         }
     }
     public  User saveUser(User user) throws SQLException {
-        String getIdSqlStatement = "select count(*) from users";
         String sql = "insert into users (id, wallet_id) values(?,?)";
         try (Connection connection = connect()) {
-            PreparedStatement preparedStatement = connection.prepareStatement((getIdSqlStatement));
-            ResultSet resultSet = preparedStatement.executeQuery();
-            resultSet.next();
-            Long currentId = resultSet.getLong(1);
-            preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setLong(1, currentId+1);
+           var  preparedStatement = connection.prepareStatement(sql);
+           Long id = generateId();
+            preparedStatement.setLong(1,id);
             preparedStatement.setObject(2, user.getWalletId());
             preparedStatement.execute();
 
-            return getUserBy(currentId+1);
+            return getUserBy(id);
         }catch (SQLException e){
             System.out.println(e.getMessage());
             throw new RuntimeException("Failed to connect to database");
         }
 
     }
-
+    private Long generateId() {
+        try (Connection connection = connect()){
+            String sql ="SELECT max(id) FROM users";
+            var statement = connection.prepareStatement(sql);
+            ResultSet resultSet = statement.executeQuery();
+            resultSet.next();
+            Long lastIdGenerated = resultSet.getLong(1);
+            return lastIdGenerated + 1;
+        } catch (SQLException e) {
+            throw new RuntimeException(e.getMessage());
+        }
+    }
     public  User getUserBy(Long id){
         String sql = "select * from users where id=?";
         try (Connection connection = connect()) {
@@ -53,10 +61,13 @@ public class UserRepository {
 
             return user;
         }catch (SQLException e){
-            e.printStackTrace();
-            System.out.println(e.getMessage());
-            throw new RuntimeException("Failed to connect to database");
+            return null;
         }
+    }
+    public Optional<User> findById(Long userId){
+        User user = getUserBy(userId);
+        if (user !=null) return Optional.of(user);
+        return Optional.empty();
     }
 
     public User updateUser (Long userId, Long walletId){
@@ -72,7 +83,14 @@ public class UserRepository {
         }
 
     }
-
-
-
+    public void deleteUser(Long userId) {
+        try(Connection connection = connect()){
+            String sql = "DELETE FROM users WHERE id = ? ";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setLong(1, userId);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Failed to delete");
+        }
+    }
 }

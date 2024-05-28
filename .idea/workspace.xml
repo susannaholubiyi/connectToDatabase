@@ -72,7 +72,7 @@
       <recent name="org.suzieBarbieStore.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepositoryTest.testUpdateUser">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest.testDeleteUser">
     <configuration name="UserRepositoryTest.saveUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="suzieBarbieStore" />
       <extension name="coverage">
@@ -105,6 +105,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserRepositoryTest.testDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="suzieBarbieStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.suzieBarbieStore.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.suzieBarbieStore.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.suzieBarbieStore.repository.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testDeleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.testFindUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="suzieBarbieStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.suzieBarbieStore.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.suzieBarbieStore.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.suzieBarbieStore.repository.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testFindUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRepositoryTest.testUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="suzieBarbieStore" />
       <extension name="coverage">
@@ -123,6 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRepositoryTest.testDeleteUser" />
+        <item itemvalue="JUnit.UserRepositoryTest.testFindUserById" />
         <item itemvalue="JUnit.UserRepositoryTest.testUpdateUser" />
         <item itemvalue="JUnit.UserRepositoryTest.saveUserTest" />
         <item itemvalue="JUnit.UserRepositoryTest.testDatabaseConnection" />
@@ -142,7 +176,7 @@
       <workItem from="1716478172424" duration="4136000" />
       <workItem from="1716539389960" duration="70000" />
       <workItem from="1716884645501" duration="2390000" />
-      <workItem from="1716887155540" duration="1401000" />
+      <workItem from="1716887155540" duration="7832000" />
     </task>
     <servers />
   </component>
